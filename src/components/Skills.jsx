@@ -1,17 +1,17 @@
 import React from "react";
 import Proptypes from "prop-types";
 
-function Skills({ name, votes }) {
+function Skills({ votes, title }) {
   return (
     <li className="skills">
-      {name}
+      {title}
       <span className="votes">{votes}</span>
     </li>
   );
 }
 
 Skills.propTypes = {
-  name: Proptypes.string.isRequired,
+  title: Proptypes.string.isRequired,
   votes: Proptypes.number.isRequired,
 };
 
