@@ -1,18 +1,13 @@
 import React from "react";
+import { Container } from "./Container";
 
 const Footer = () => {
-  const mainFooter = {
-    backgroundColor: "#f76c6c",
-    fontSize: "2rem",
-    fontWeight: "bold",
-    color: "#c9c9c9",
-  };
   return (
     <div>
-      <footer style={mainFooter}>
-        <div className="container">
+      <footer>
+        <Container>
           <p>&copy; 2022 Wild Code School</p>
-        </div>
+        </Container>
       </footer>
     </div>
   );
